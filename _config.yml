@@ -108,7 +108,7 @@ deploy:
 title: Cathy's Blog
 
 # banner顯示子標題
-subtitle: 
+subtitle: Plus Ultra
 
 # banner顯示簡介
 subtitle_desc: 日常學習與生活紀錄
@@ -126,7 +126,7 @@ introduction: 朝遠方前進，把破極限吧！
 favicon_ico: 
 
 # 部落格左上角logo，支援本機與線上圖片
-logo: 
+logo: ../themes/hexo-theme-skapp/source/img/logo.png
 
 # 大頭照/QR code（用於顯示再footer）二選一
 avatar: 
@@ -136,7 +136,7 @@ avatar:
 default_cover: 
 
 # header 背景圖
-header_cover: 
+header_cover: ../themes/hexo-theme-skapp/source/img/banner.jpg
 
 # 404 頁面背景圖
 error_page_bg: 

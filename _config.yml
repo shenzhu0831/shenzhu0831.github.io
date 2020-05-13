@@ -99,8 +99,60 @@ theme: hexo-theme-skapp
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: <repository url>
-  branch: [branch]
-  message: [message]
+  repo: https://github.com/shenzhu0831/shenzhu0831.github.io.git
+  branch: master
+  # message: [message]
+
+# Site
+# blog標題
+title: Cathy's Blog
+
+# banner顯示子標題
+subtitle: 
+
+# banner顯示簡介
+subtitle_desc: 日常學習與生活紀錄
+
+# seo關鍵字
+keywords:
+
+# blog介紹（同可用於seo)
+description: 日常學習與生活紀錄
+
+# 個人簡介
+introduction: 朝遠方前進，把破極限吧！
+
+# blog圖標，支援本機與線上圖片，本機圖片請將檔案放在 themes/hexo-theme-skapp/source/img 資料夾內
+favicon_ico: 
+
+# 部落格左上角logo，支援本機與線上圖片
+logo: 
+
+# 大頭照/QR code（用於顯示再footer）二選一
+avatar: 
+# qrcode: 
+
+# 文章預設封面
+default_cover: 
+
+# header 背景圖
+header_cover: 
+
+# 404 頁面背景圖
+error_page_bg: 
+
+# 頁面跳轉loading icon
+loader_img: https://blog.static.minfive.com/other/loader.gif
+
+# 站長訊息
+author:
+  name: Cathy Shen
+  link: 
+
+# 用於 footer 的站長訊息
+about:
+  info: 本站是基於 Hexo 搭建的靜態資源博客，主要用於分享日常學習、生活及工作的一些心得總結，歡迎點擊右下角訂閱 rss。
+  address: 
+  email: 
 
 

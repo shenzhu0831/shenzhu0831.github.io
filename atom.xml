@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Cathy&#39;s blog</title>
   
-  
+  <subtitle>Plus Ultra</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Cathy Shen</name>
+    <name>[object Object]</name>
     
   </author>
   

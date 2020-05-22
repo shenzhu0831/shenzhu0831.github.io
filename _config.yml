@@ -18,8 +18,8 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -36,9 +36,9 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-enable: true # Open external links in new tab
-field: site # Apply to the whole site
-exclude: ''
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -46,20 +46,20 @@ relative_link: false
 future: true
 highlight:
   enable: true
-line_number: true
-auto_detect: false
-tab_replace: ''
-wrap: true
-hljs: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-path: ''
-per_page: 10
-order_by: -date
+  path: ''
+  per_page: 10
+  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -97,10 +97,50 @@ theme: hexo-theme-skapp
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-type: git
-repo: https://github.com/shenzhu0831/shenzhu0831.github.io.git
-branch: master
-# message: [message]
+  type: git
+  repo: https://github.com/shenzhu0831/shenzhu0831.github.io.git
+  branch: master
+  # message: [message]
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true # Doesn't escape HTML content so the tags will appear as html.
+    xhtmlOut: false # Parser will not produce XHTML compliant code.
+    breaks: true # Parser produces `<br>` tags every time there is a line break in the source document.
+    linkify: false # Returns text links as text.
+    typographer: true # Substitution of common typographical elements will take place.
+    quotes: '“”‘’' # "double" will be turned into “single”
+                   # 'single' will be turned into ‘single’
+  plugins:
+    - markdown-it-abbr
+    - name: markdown-it-container
+      options: success
+    - name: markdown-it-container
+      options: info
+    - name: markdown-it-container
+      options: warning
+    - name: markdown-it-container
+      options: danger
+    - markdown-it-deflist
+    - name: markdown-it-emoji
+      options:
+        shortcuts: {}
+    - markdown-it-footnote
+    - markdown-it-imsize
+    - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-regexp
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-checkbox
+  anchors:
+    level: 1, 2 # Minimum level for ID creation. (Ex. h2 to h6)
+    collisionSuffix: 'v' # A suffix that is prepended to the number given if the ID is repeated.
+    permalink: true # If true, creates an anchor tag with a permalink besides the heading.
+    permalinkClass: header-anchor # Class used for the permalink anchor tag.
+    permalinkSymbol: '' # The symbol used to make the permalink.
 
 # Site
 
